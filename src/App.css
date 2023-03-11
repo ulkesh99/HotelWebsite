@@ -1,0 +1,446 @@
+.navbar-custom {
+  background-color: #394156;
+  color: #F0DDBC;
+}
+
+.nav-item :hover{
+  text-decoration: underline #F0DDBC ;
+  padding-bottom: 4px;
+  margin-top: 4px;
+  color: #394156;
+}
+
+
+.nav-link active :hover{
+  color: #394156;
+}
+.cimg{
+  height: 95vh;
+
+}
+
+.about{
+  background-color: #394156;
+}
+
+.aboutSection{
+  padding-top: 120px;
+  font-size: 65px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 120px;
+  color: #F0DDBC;
+  background-color: #394156;
+}
+
+.aboutSection p{
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.aboutImageSection{
+  padding-top: 120px;
+  font-size: 45px;
+  padding-bottom: 120px;
+}
+
+ 
+
+.packagesSection h2{
+  font-size: 45px;
+}
+
+.card{
+  width: 350px;
+  height: 400px;
+  padding: 2em;
+}
+
+
+.galleryHeader{
+  font-size: 45px;
+  padding-top: 20px;
+}
+.amenitiesSection{
+  background-color: #394156;
+  color: #F0DDBC;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.amenities-card{
+  border: 4px solid #F0DDBC
+}
+
+.amenities-card:hover{
+  border: 4px solid #F0DDBC;
+  box-shadow: 5px 10px #F0DDBC;
+  margin-top: 10px;
+}
+
+
+.packagesSection{
+  padding-top: 40px;
+  height: 100vh;
+  padding-bottom: 40px;
+  background-color: bisque;
+  color: #394156;
+}
+
+.packagesdetails{
+  font-size: 14px;
+}
+
+.heading{
+  text-align: center;
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.amenitiesImg{
+  min-height: 200px;
+}
+.packagesCard{
+  border: 2px solid #394156;
+}
+
+.packagesCard:hover{
+  border: 1px solid #394156;
+  margin-top: 10px;
+  box-shadow: 5px 15px #394156;
+}
+
+.packagesHeading{
+  text-align: center;
+}
+
+.aboutImg{
+  max-width: 400px;
+}
+
+.footer-left{
+  padding-top: 80px;
+  padding-left: 40px;
+}
+
+.footer-mid{
+  padding-bottom: 50px;
+}
+
+.faqContainer{
+  background-color: #394156;
+  color: #F0DDBC;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: oldlace;
+  color: black;
+  border: none;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.gallerySection{
+  background-color: bisque;
+  color: #394156;
+}
+
+.accordion-header{
+  background-color: antiquewhite;
+}
+
+.accordion-button{
+  background-color: antiquewhite;
+}
+
+.contactInput{
+  max-width: 640px;
+  margin-right: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.contactContainer {
+  background-color: gray;
+}
+.contactHeader{
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 45px;
+  color: white;
+}
+
+.contactContainer{
+  background-color: bisque;
+  color: #394156;
+  padding-top: 120px;
+  /* margin-top: 40px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm{
+  flex-direction: column;
+}
+
+.btn-primary{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contactSection {
+  flex-direction: column;
+}
+.contactHeader{
+  color: #394156;
+}
+.contactMap{
+  flex-direction: column;
+}
+
+.license{
+  font-size: 11px;
+}
+.footerSection{
+  background-color: #394156;
+  color: #F0DDBC;
+}
+.footer-socials-header{
+  padding-top: 20px;
+}
+.footer-socials{
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+.footer-socials-name{
+  list-style-type: none;
+}
+
+.amenities-card-title{
+  color: #394156;
+}
+
+.amenities-card-text{
+  color: #394156;
+}
+
+.contactUs{
+  background-color: #F0DDBC;
+  color: #394156;
+}
+
+.contactInp{
+  border: 2px solid #394156;
+  max-width: 30vw;
+  padding-top: 10px;
+}
+
+
+#about{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#landing{
+  min-height: 70vh;
+}
+
+#amenities{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  
+}
+
+#contact{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 40px; */
+}
+
+#FAQ{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  background-color:#394156
+}
+
+#footer{
+  min-height: 40vh;
+}
+
+#gallery{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+
+.head-text {
+  position: relative;
+}
+.text-on-image {
+ position: absolute;
+ right: 50%;
+ left: 20%;
+ bottom: 45%;
+}
+
+
+
+
+
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 99999;
+}
+
+.socials{
+  text-decoration: none;
+  margin-right: 20px;
+  color: #F0DDBC;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+      margin-top: 10px;
+  }
+
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+      /* z-index: 999; */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* // Media Queries */
+
+@media screen and (max-width: 350px) {
+  .about {
+    min-height: 40vh;
+    padding-top: 10px;
+    background-color: #394156 !important;
+    /* Apply some styles */
+  }
+  .aboutImg{
+    max-width: 35vh
+  }
+
+  .mapss{
+    width: 20vh;
+    height: 40vh;
+  }
+  .contactHeading{
+    padding-left: 100px !important;
+    padding-bottom: 40px;
+    font-size: 40px;
+    
+  }
+
+  .contactInp{
+    min-width: 80vw;
+  }
+
+  .landing{
+    min-height: 50vh;
+    max-width: 100vw;
+  }
+
+  .imgHero{
+    min-height: 80vh;
+    max-width: 65vh;
+    object-fit: cover;
+  }
+
+
+  .contactFormSection{
+    flex-direction: row;
+  }
+
+  .contactUs{
+    max-height: 155vh;
+  }
+
+  .mapSection{
+    padding-top: 190px;
+    padding-left: 80px;
+    width: 100vw;
+    height: 50px;
+    /* display: none; */
+  }
+}
+
+/* 
+@media screen and (min-width: 768px) {
+  .landing{
+    min-height: 50vh;
+    max-width: 100vh;
+  }
+
+  imgHero{
+    min-height: 80vh;
+    max-width: 100vw;
+    /* object-fit: cover; */
+  /* }
+
+  .contactInp{
+   min-width: 80vw;
+  }
+
+  .form-control{
+    min-width: 550px;
+    margin-bottom: 20px;
+    border: 2px solid #394156;
+  }
+
+  .aboutImg{
+    max-height: 60vh;
+    max-width: 30vw;
+  }
+
+  .contactUs{
+    height: 100vh;
+  } */
+
+/* }  */
