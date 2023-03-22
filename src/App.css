@@ -1,19 +1,45 @@
-.navbar-custom {
-  background-color: #394156;
+.navbar {
+  background: #394156;
+}
+
+.nav-link{
   color: #F0DDBC;
 }
 
-.nav-item :hover{
-  text-decoration: underline #F0DDBC ;
-  padding-bottom: 4px;
-  margin-top: 4px;
-  color: #394156;
+.nav-link:hover{
+  color: #ffc664;
 }
 
-
-.nav-link active :hover{
-  color: #394156;
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 1px;
+  background: #ffc664;
+  transition: 0.4s
 }
+
+.nav-item:hover::after {
+  width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #F0DDBC;
+}
+
+.nav-link {
+  padding: 25px 5px;
+  font-size: 20px;
+  transition: 0.2s
+}
+/* .nav-link active :hover{
+  color: #394156;
+} */
 .cimg{
   height: 95vh;
 
@@ -60,6 +86,10 @@
 .galleryHeader{
   font-size: 45px;
   padding-top: 20px;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#394156, #F0DDBC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .amenitiesSection{
   background-color: #394156;
@@ -83,7 +113,7 @@
   padding-top: 40px;
   height: 100vh;
   padding-bottom: 40px;
-  background-color: bisque;
+  background-color: #F0DDBC;
   color: #394156;
 }
 
@@ -115,9 +145,13 @@
 .packagesHeading{
   text-align: center;
 }
+.contactUs{
+  background-color: #F0DDBC;
+
+}
 
 .aboutImg{
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .footer-left{
@@ -125,6 +159,10 @@
   padding-left: 40px;
 }
 
+.footerSection{
+  display: flex;
+  flex-direction: column;
+}
 .footer-mid{
   padding-bottom: 50px;
 }
@@ -136,6 +174,11 @@
   padding-bottom: 20px;
 }
 
+/* .imgHero{
+  object-fit: contain;
+  min-height: 100vh;
+} */
+
 .accordion-button:not(.collapsed) {
   background-color: oldlace;
   color: black;
@@ -144,7 +187,7 @@
 }
 
 .gallerySection{
-  background-color: bisque;
+  background-color: #F0DDBC;
   color: #394156;
 }
 
@@ -156,52 +199,86 @@
   background-color: antiquewhite;
 }
 
-.contactInput{
-  max-width: 640px;
-  margin-right: 40px;
+
+.form-group{
+  margin-top: 40px;
+  border: 2px solid #394156;
+  outline: none;
+  min-width: 50vw;
+}
+
+textarea{
+  max-height: 90px;
+  border: 2px solid #394156;
+}
+
+.btn-primary{
+  margin-top: 140px;
+  width: 10vw;
+  height: 5vh;
+}
+
+/* .ContactUs{
+  background-image: url('./images/contactBg.svg');
+} */
+
+/* .contactUs{
+  background-color: #F0DDBC;
+} */
+
+.mapSection{
+  padding-left: 20px;
   justify-content: center;
   align-items: center;
-  display: flex;
-
 }
 
-.contactContainer {
-  background-color: gray;
-}
-.contactHeader{
-  padding-top: 25px;
-  padding-bottom: 20px;
-  font-size: 45px;
-  color: white;
-}
-
-.contactContainer{
-  background-color: bisque;
-  color: #394156;
-  padding-top: 120px;
-  /* margin-top: 40px; */
-  align-items: center;
-  justify-content: center;
-}
-
-.contactForm{
-  flex-direction: column;
-}
 
 .btn-primary{
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.contactSection {
-  flex-direction: column;
-}
-.contactHeader{
+.landingHeader{
+  font-size: 6rem;
+  width: 100vw;
+  padding-left: 60px;
+  margin-left: 90px;
   color: #394156;
 }
-.contactMap{
-  flex-direction: column;
+
+.contactFormSection{
+  background-color: #394156;
+  border: dashed 2px #394156;
 }
+
+.contactHeading{
+  color: #F0DDBC;
+}
+
+.form-control{
+  background-color: #394156;
+  color: #F0DDBC;
+}
+
+#contactlabels{
+  color: #F0DDBC;
+  align-items: start;
+  margin-right: 90%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+
 
 .license{
   font-size: 11px;
@@ -226,20 +303,16 @@
   color: #394156;
 }
 
+.card:hover{
+  -webkit-box-shadow: 17px 19px 15px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 17px 19px 15px -4px rgba(0,0,0,0.75);
+box-shadow: 17px 19px 15px -4px rgba(0,0,0,0.75);
+}
 .amenities-card-text{
   color: #394156;
 }
 
-.contactUs{
-  background-color: #F0DDBC;
-  color: #394156;
-}
 
-.contactInp{
-  border: 2px solid #394156;
-  max-width: 30vw;
-  padding-top: 10px;
-}
 
 
 #about{
@@ -250,7 +323,7 @@
 }
 
 #landing{
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 #amenities{
@@ -261,12 +334,7 @@
   
 }
 
-#contact{
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 40px; */
-}
+
 
 #FAQ{
   min-height: 100vh;
@@ -275,6 +343,10 @@
   padding-top: 40px;
   background-color:#394156
 }
+
+
+
+
 
 #footer{
   min-height: 40vh;
@@ -328,7 +400,7 @@
 }
 
 /* for mobile */
-@media screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
   .whatsapp-icon {
       margin-top: 10px;
   }
@@ -343,104 +415,71 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* // Media Queries */
-
-@media screen and (max-width: 350px) {
-  .about {
-    min-height: 40vh;
-    padding-top: 10px;
-    background-color: #394156 !important;
-    /* Apply some styles */
-  }
-  .aboutImg{
-    max-width: 35vh
+@media all and (max-width: 368px) {
+  .imgHero {
+    min-height: 100vh;
+    object-fit:cover;
   }
 
-  .mapss{
-    width: 20vh;
-    height: 40vh;
+  .contactSection{
+    flex-direction: column;
   }
-  .contactHeading{
-    padding-left: 100px !important;
-    padding-bottom: 40px;
+
+  .form-group{
+    max-width: 20vw;
+  }
+
+  .landingHeader{
     font-size: 40px;
-    
   }
 
-  .contactInp{
-    min-width: 80vw;
+  .contactFormSection{
+
+    min-width: 280px;
   }
 
-  .landing{
-    min-height: 50vh;
-    max-width: 100vw;
+
+  .aboutImg{
+    max-width: 320px;
   }
 
+
+}
+@media all and (max-width: 1000px){
   .imgHero{
-    min-height: 80vh;
-    max-width: 65vh;
+    min-height: 100vh;
     object-fit: cover;
   }
 
+  .form-control
+  {
+    min-width: 80vw;
+  }
+
+  #contactlabels{
+    margin-right: 280px;
+  }
 
   .contactFormSection{
-    flex-direction: row;
+    min-width: 380px;
   }
 
-  .contactUs{
-    max-height: 155vh;
+
+  .aboutImg{
+    max-height: 300px;
+    padding-top: 0;
+    margin-bottom: 20px;
   }
 
-  .mapSection{
-    padding-top: 190px;
-    padding-left: 80px;
-    width: 100vw;
-    height: 50px;
-    /* display: none; */
+  .landingHeader{
+    font-size: 90px;
+
+align-items: center;
+justify-content: center;
+text-align: center;    /* width: 100vw; */
+  /* padding-left: 10px; */
+  /* margin-left: 0px; */
+  color: #394156;
   }
 }
 
-/* 
-@media screen and (min-width: 768px) {
-  .landing{
-    min-height: 50vh;
-    max-width: 100vh;
-  }
-
-  imgHero{
-    min-height: 80vh;
-    max-width: 100vw;
-    /* object-fit: cover; */
-  /* }
-
-  .contactInp{
-   min-width: 80vw;
-  }
-
-  .form-control{
-    min-width: 550px;
-    margin-bottom: 20px;
-    border: 2px solid #394156;
-  }
-
-  .aboutImg{
-    max-height: 60vh;
-    max-width: 30vw;
-  }
-
-  .contactUs{
-    height: 100vh;
-  } */
-
-/* }  */

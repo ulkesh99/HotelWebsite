@@ -8,6 +8,11 @@ import FAQ from "./components/FAQ";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+// import TestContact from "./components/TestContact";
+// import SampleContact from "./components/SampleContact";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -20,7 +25,10 @@ function App() {
       <Gallery />
       <FAQ />
       <Contact />
+      <Map />
+
       <Footer />
+
       <a
         href="https://wa.me/7678055899"
         class="whatsapp_float"
